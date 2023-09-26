@@ -1,0 +1,18 @@
+
+
+OUTPUT 'Enter the amount'
+INPUT N
+ IF N > 100 THEN 
+        h = N/100 f = (N%100)/50 t = ((N%100)%50)/20 rest = (((N%100)%50)%20)/10 s = h + f + t + rest
+        OUTPUT s
+ELSE IF N > 50 THEN 
+        f = N/50 t = (N%50)/20 rest ((N%50)%20)/10 s = f + t + rest
+        OUTPUT s
+ELSE IF N > 20 THEN 
+        t = N/20 rest = (N%20)/10 s = t + rest
+        OUTPUT s
+ELSE IF N > 10 THEN
+        rest = N/10 s = rest
+        OUTPUT s
+ELSE OUTPUT 'Enter a correct amount'
+END IF
