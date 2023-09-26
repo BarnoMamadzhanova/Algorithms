@@ -1,15 +1,15 @@
 
-REPEAT
-        OUTPUT 'I choose tne number from 1 to 10. Guess it!'        
-    INPUT user´s answer  
 
-    IF answer higher than 7 THEN   
+        OUTPUT 'I choose tne number from 1 to 10. Guess it!'        
+    INPUT N  
+
+    IF N higher than 7 THEN   
                 OUTPUT 'Guess again higher!'
-    IF answer lower than 7 THEN
+    ELSE IF N lower than 7 THEN
                 OUTPUT 'Guess again lower!'
-    IF answer equals 7 THEN
+    ELSE IF N equals 7 THEN
                 OUTPUT 'You are correct!'
         ELSE
                 OUTPUT 'Try again!'
+    END IF
 
-UNTIL answer equals '7'
