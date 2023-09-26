@@ -1,0 +1,9 @@
+
+
+INPUT seconds
+w = INPUT/604800
+d = (INPUT%604800)-86400
+h = ((INPUT%604800)%86400)/3600
+m = (((INPUT%604800)%86400)%3600)/60
+s = (((INPUT%604800)%86400)%3600)%60
+OUTPUT "w weeks d days h hours m minutes s seconds"
