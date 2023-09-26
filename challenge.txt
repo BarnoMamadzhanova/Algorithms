@@ -1,0 +1,92 @@
+
+Find max
+INPUT arr           [1, 3, 5, 4, 5, 9, 6, 1, 2, 6, 5, 4, 4, 9, 7]
+                    [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o]
+
+  IF a >=b
+    return a;
+  else  
+    return b;
+  if b >=c 
+    return c;
+  else
+    return c;
+  if c >=d
+    return c;
+  else 
+    return d;
+  if d >=e
+    return d;
+  else 
+    return e;
+  if e >=f
+    return e;
+  else  
+    return f;
+  if f >=g 
+    return f;
+  else
+    return g;
+  if g >=h
+    return g;
+  else 
+    return h;
+  if h >=i
+    return h;
+  else 
+    return i;
+  if i >=j
+    return i;
+  else  
+    return j;
+  if j >=k 
+    return j;
+  else
+    return k;
+  if k >=l
+    return k;
+  else 
+    return l;
+  if l >=m
+    return l;
+  else 
+    return m;
+  if m >=n
+    return m;
+  else  
+    return n;
+  if n >=o 
+    return n;
+  else
+    return o;
+ END IF
+
+
+
+Find max
+INPUT arr to size l [1, 3, 5, 4, 5, 9, 6, 1, 2, 6, 5, 4, 4, 9, 7]
+i=index, l=size of an array, a=array
+
+
+function find_Max(a,index,l)
+{
+    let max;
+    if(l - 1 == 0)
+    {
+        return a[index];
+    }
+    if (index >= l - 2)
+    {
+        if (a[index] > a[index + 1])
+            return a[index];
+        else
+            return a[index + 1];
+    }
+  
+    max = find_Max(a, index + 1, l);
+  
+    if (a[index] > max)
+        return a[index];
+    else
+        return max;
+}
